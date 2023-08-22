@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "express": "^4.18.2",
     "nodemon": "^1.18.3"
   },
   "scripts": {
@@ -9,7 +10,6 @@
   "description": "",
   "version": "1.0.0",
   "main": "server.js",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ANHFunix/LabNJS301x.git"
