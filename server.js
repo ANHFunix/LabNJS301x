@@ -1,11 +1,9 @@
 const express = require('express')
+const path = require('path')
 const app = express()
+const mainRoute = require('./router/index')
 
-app.get('/', function (req, res) {
-  res.send('<p>The Middleware that handles just /</p>')
-})
-app.get('/users', function (req, res) {
-  res.send('<p>The Middleware that handles just /users</p>')
-})
+app.use(express.static(path.join(__dirname, 'public')))
+app.use(mainRoute)
 
 app.listen(3000)
